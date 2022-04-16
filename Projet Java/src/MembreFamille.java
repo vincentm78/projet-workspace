@@ -9,7 +9,7 @@ public class MembreFamille extends Pnj{
 		this.estTrouve = estTrouve;
 	}
 
-	public boolean isEstTrouve() {
+	public boolean isTrouve() {
 		return estTrouve;
 	}
 

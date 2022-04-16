@@ -6,10 +6,10 @@ public class Personnage {
 	private char sexe;
 	
 	
-	public Personnage(String pseudo, Localisation localisation, char sexe) {
+	public Personnage(String pseudo, Position localisation, char sexe) {
 		super();
 		this.pseudo = pseudo;
-		this.localisation = localisation;
+		this.position = localisation;
 		this.sexe = sexe;
 	}
 
@@ -24,13 +24,13 @@ public class Personnage {
 	}
 
 
-	public Localisation getLocalisation() {
-		return localisation;
+	public Position getLocalisation() {
+		return position;
 	}
 
 
-	public void setLocalisation(Localisation localisation) {
-		this.localisation = localisation;
+	public void setLocalisation(Position localisation) {
+		this.position = localisation;
 	}
 
 
