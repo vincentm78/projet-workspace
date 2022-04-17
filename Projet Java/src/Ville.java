@@ -1,4 +1,3 @@
-package Carte;
 
      public class Ville
 
