@@ -32,6 +32,296 @@ public class Joueur extends Personnage {
 			this.nbPas ++;
 		}
 		
+		import java.io.*;
+
+		
+              public void sedeplacerN()
+
+              {
+
+                            int v = this.getNumVille();
+
+                            int c = this.getCase();                  
+
+                            if(v==1||v==2||v==0)
+
+                            {
+
+                                          if(c==1||c==0)
+
+                                          {
+
+                                                         System.out.println("Vous ne pouvez pas allez au NORD à cette endroit, vous etes au bord de la map");
+
+                                          }
+
+                                          else {
+
+                                                         if(c==2) {
+
+                                                                       this.position[v][c]=this.position[v][c-2];
+
+                                                         }
+
+                                                         if(c==3) {
+
+                                                                      this.position[v][c]=this.position[v][c-2];
+
+                                                         }     
+
+                                          }
+
+                            }
+
+                            else {
+
+                                          if(c==0||c==1)
+
+                                          {
+
+                                                         System.out.println("Vous ne pouvez pas allez au NORD à cette endroit, il faut prendre une porte");
+
+                                          }
+
+                                          else {
+
+                                                         if(c==2) {
+
+                                                                       this.position[v][c]=this.position[v][c-2];
+
+                                                         }
+
+                                                         if(c==3) {
+
+                                                                       this.position[v][c]=this.position[v][c-2];
+
+                                                         }
+
+                                                         }
+
+                                          }
+
+              }
+
+
+              public void sedeplacerS()
+
+              {
+
+                            int v = this.getNumVille();
+
+                            int c = this.getCase();                  
+
+                            if(v==7||v==8||v==6)
+
+                            {
+
+                                          if(c==2||c==3)
+
+                                          {
+
+                                                         System.out.println("Vous ne pouvez pas allez au SUD à cette endroit, vous etes au bord de la map");
+
+                                          }
+
+                                          else {
+
+                                                         if(c==0) {
+
+                                                                       this.position[v][c]=this.position[v][c+2];
+
+                                                         }
+
+                                                         if(c==1) {
+
+                                                                       this.position[v][c]=this.position[v][c+2];
+
+                                                         }                      
+
+                                          }
+
+                            }
+
+                            else {
+
+                                          if(c==2||c==3)
+
+                                          {
+
+                                                         System.out.println("Vous ne pouvez pas allez au SUD à cette endroit, il faut prendre une porte");
+
+                                          }
+
+                                          else {
+
+                                                         if(c==0) {
+
+                                                                       this.position[v][c]=this.position[v][c+2];
+
+                                                         }
+
+                                                         if(c==1) {
+
+                                                                       this.position[v][c]=this.position[v][c+2];
+
+                                                         }
+                            }                  
+
+              }
+
+}
+
+ 
+
+              public void sedeplacerE()
+
+              {
+
+                            int v = this.getNumVille();
+
+                            int c = this.getCase();                  
+
+                            if(v==2||v==5||v==8)
+
+                            {
+
+                                          if(c==1||c==3)
+
+                                          {
+
+                                                         System.out.println("Vous ne pouvez pas allez à l'EST à cette endroit, vous etes au bord de la map");
+
+                                          }
+
+                                          else {
+
+                                                         if(c==0) {
+
+                                                                       this.position[v][c]=this.position[v][c+1];
+
+                                                         }
+
+                                                         if(c==2) {
+
+                                                                       this.position[v][c]=this.position[v][c+1];
+
+                                                         }
+
+                                          }
+
+                            }
+
+                            else {
+
+                                          if(c==1||c==3)
+
+                                          {
+
+                                                         System.out.println("Vous ne pouvez pas allez à l'EST à cette endroit, il faut prendre une porte");
+
+                                          }
+
+                                          else {
+
+                                                         if(c==0) {
+
+                                                                       this.position[v][c]=this.position[v][c+1];
+
+                                                         }
+
+                                                         if(c==2) {
+
+                                                                       this.position[v][c]=this.position[v][c+1];
+
+                                                         }
+  
+
+                            }
+                   
+
+              }
+
+}
+
+             
+
+              public void sedeplacerO()
+
+              {
+
+                            int v = this.getNumVille();
+
+                            int c = this.getCase();                  
+
+                            if(v==0||v==3||v==6)
+
+                            {
+
+                                          if(c==0||c==2)
+
+                                          {
+
+                                                         System.out.println("Vous ne pouvez pas allez à l'OUEST à cette endroit, vous etes au bord de la map");
+
+                                          }
+
+                                          else {
+
+                                                         if(c==1) {
+
+                                                                       this.position[v][c]=this.position[v][c-1];
+
+                                                         }
+
+                                                         if(c==3) {
+
+                                                                       this.position[v][c]=this.position[v][c-1];
+
+                                                         }
+
+                                                        
+
+                                          }
+
+                            }
+
+                            else {
+
+                                          if(c==0||c==2)
+
+                                          {
+
+                                                         System.out.println("Vous ne pouvez pas allez à l'OUEST à cette endroit, il faut prendre une porte");
+
+                                          }
+
+                                          else {
+
+                                                         if(c==1) {
+
+                                                                       this.position[v][c]=this.position[v][c-1];
+
+                                                         }
+
+                                                         if(c==3) {
+
+                                                                       this.position[v][c]=this.position[v][c-1];
+
+                                                         }
+
+                                         
+
+                            }
+
+                                         
+
+              }
+
+}
+
+ 
+
+
 	}
 
 	
