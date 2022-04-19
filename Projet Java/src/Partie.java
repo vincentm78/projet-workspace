@@ -107,5 +107,4 @@ public class Partie {
 	public LinkedList<PNJ> getFamille() {
 		return famille;
 	}
-
-              }
+}
