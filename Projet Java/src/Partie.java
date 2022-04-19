@@ -7,8 +7,33 @@ import java.util.*;
 public class Partie {
 
  
-
-              public void traiterCmd(String cmd)
+ private LinkedList<PNJ> famille = new LinkedList<PNJ>();
+	private LinkedList<PNJ> aide = new LinkedList<PNJ>();
+ 
+ public Partie()
+	{
+		Carte C = new Carte();
+		C.creerCarte();
+		
+		for(int i=1;i<=5;i++)
+		{
+			PNJ pnj = new PNJ(null,null,null,null);
+			pnj = pnj.donnePNJFamille(i);
+			famille.add(pnj);
+		}
+		for (int j=6;j<=9;j++)
+		{
+			PNJ pnj = new PNJ(null,null,null,null);
+			pnj = pnj.donnePNJFamille(j);
+			aide.add(pnj);
+		}
+		
+	}
+ 
+ 
+ 
+ 
+               public void traiterCmd(String cmd)
 
               {
                   if(listecmdPossible.contains(cmd))
@@ -65,5 +90,22 @@ public class Partie {
 
 
                             }
+                
+ public void setFamille(LinkedList<PNJ> famille) {
+		this.famille = famille;
+	}
+
+
+	public LinkedList<PNJ> getAide() {
+		return aide;
+	}
+
+
+	public void setAide(LinkedList<PNJ> aide) {
+		this.aide = aide;
+	}
+	public LinkedList<PNJ> getFamille() {
+		return famille;
+	}
 
               }
