@@ -60,12 +60,14 @@ public class Joueur extends Personnage {
                                                          if(c==2) {
 
                                                                        this.position[v][c]=this.position[v][c-2];
+								 this.nbPas ++;
 
                                                          }
 
                                                          if(c==3) {
 
                                                                       this.position[v][c]=this.position[v][c-2];
+								 this.nbPas ++;
 
                                                          }     
 
@@ -88,12 +90,14 @@ public class Joueur extends Personnage {
                                                          if(c==2) {
 
                                                                        this.position[v][c]=this.position[v][c-2];
+								 this.nbPas ++;
 
                                                          }
 
                                                          if(c==3) {
 
                                                                        this.position[v][c]=this.position[v][c-2];
+								 this.nbPas ++;
 
                                                          }
 
@@ -129,12 +133,14 @@ public class Joueur extends Personnage {
                                                          if(c==0) {
 
                                                                        this.position[v][c]=this.position[v][c+2];
+								 this.nbPas ++;
 
                                                          }
 
                                                          if(c==1) {
 
                                                                        this.position[v][c]=this.position[v][c+2];
+								 this.nbPas ++;
 
                                                          }                      
 
@@ -157,12 +163,14 @@ public class Joueur extends Personnage {
                                                          if(c==0) {
 
                                                                        this.position[v][c]=this.position[v][c+2];
+								 this.nbPas ++;
 
                                                          }
 
                                                          if(c==1) {
 
                                                                        this.position[v][c]=this.position[v][c+2];
+								 this.nbPas ++;
 
                                                          }
                             }                  
@@ -198,12 +206,14 @@ public class Joueur extends Personnage {
                                                          if(c==0) {
 
                                                                        this.position[v][c]=this.position[v][c+1];
+								 this.nbPas ++;
 
                                                          }
 
                                                          if(c==2) {
 
                                                                        this.position[v][c]=this.position[v][c+1];
+								 this.nbPas ++;
 
                                                          }
 
@@ -226,12 +236,14 @@ public class Joueur extends Personnage {
                                                          if(c==0) {
 
                                                                        this.position[v][c]=this.position[v][c+1];
+								 this.nbPas ++;
 
                                                          }
 
                                                          if(c==2) {
 
                                                                        this.position[v][c]=this.position[v][c+1];
+								 this.nbPas ++;
 
                                                          }
   
@@ -270,12 +282,14 @@ public class Joueur extends Personnage {
                                                          if(c==1) {
 
                                                                        this.position[v][c]=this.position[v][c-1];
+								 this.nbPas ++;
 
                                                          }
 
                                                          if(c==3) {
 
                                                                        this.position[v][c]=this.position[v][c-1];
+								 this.nbPas ++;
 
                                                          }
 
@@ -300,12 +314,14 @@ public class Joueur extends Personnage {
                                                          if(c==1) {
 
                                                                        this.position[v][c]=this.position[v][c-1];
+								 this.nbPas ++;
 
                                                          }
 
                                                          if(c==3) {
 
                                                                        this.position[v][c]=this.position[v][c-1];
+								 this.nbPas ++;
 
                                                          }
 
