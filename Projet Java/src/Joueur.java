@@ -2,14 +2,19 @@ import java.util.LinkedList;
 
 public class Joueur extends Personnage {
 	
+	private Integer nbPas = 0;
+	private LinkedList<Objet> inventaire = new LinkedList<Objet>();
+	private LinkedList<PNJ> family = new LinkedList<PNJ>();
+	private String nom;
+	private String pseudo;
+	
 
-	public Joueur(String pseudo, Position localisation, char sexe) {
-		super(pseudo, localisation, sexe);
+	public Joueur(Position localisation, String pseudo) {
+		super(localisation);
+		this.nom = "Jordan";
 		// TODO Auto-generated constructor stub
 	}
 	
-	private Integer nbPas = 0;
-	private LinkedList<Objet> inventaire = new LinkedList<Objet>();
 	
 	
 	//Faire défiler l'inventaire (boucle) et le pnj voit si il y a l'objet demandé ou non
@@ -355,6 +360,42 @@ public class Joueur extends Personnage {
 			System.out.println(this.inventaire.get(i));
 			i++;
 		}
+	}
+	
+		public String getPseudo() {
+		return Pseudo;
+	}
+
+	public void setPseudo(String pseudo) {
+		Pseudo = pseudo;
+	}
+
+
+	public Inventaire getInventaire() {
+		return inventaire;
+	}
+
+	public void setInventaire(Inventaire inventaire) {
+		this.inventaire = inventaire;
+	}
+
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public LinkedList<PNJ> getFamily() {
+		return family;
+	}
+
+
+
+	public void setFamily(LinkedList<PNJ> family) {
+		this.family = family;
 	}
 	
 	//****************Reflechir à mettre l'inventaire dans la classe Partie****************
