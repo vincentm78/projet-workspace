@@ -1,4 +1,6 @@
 import java.util.LinkedList;
+import java.io.*;
+
 
 public class Joueur extends Personnage {
 	
@@ -37,7 +39,6 @@ public class Joueur extends Personnage {
 			this.nbPas ++;
 		}
 		
-		import java.io.*;
 
 		
               public void sedeplacerN()
