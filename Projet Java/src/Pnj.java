@@ -89,7 +89,7 @@ public class PNJ extends Personnage{
 			x=3;y=1;
 			String role = "Pere";
 			
-			String Script = "Salut Fiston, faut qu'on retrouve les autres, il y a un commisariat au sud on peut les voir si tu veux";
+			String Script = "Salut Fiston, faut qu'on retrouve les autres, il y a un commissariat au sud on peut les voir si tu veux";
 			Position pos = new Position(x,y);
 			PNJ pnj = new PNJ (pos,role,Script);
 			return pnj;
@@ -136,7 +136,8 @@ public class PNJ extends Personnage{
 			x=3;y=3;
 			String role = "Lenny le policier";
 			
-			String Script = "Bonjour je suis Lenny le policier";
+			String Script = "Bonjour je suis Lenny le policier. Va voir mon collègue" + 
+					" le cow boy si ce n'est pas déjà fait, je pionce moi";
 			Position pos = new Position(x,y);
 			PNJ pnj = new PNJ (pos,role,Script);
 			return pnj;
@@ -150,7 +151,11 @@ public class PNJ extends Personnage{
 			
 			String Script = "Bonjour je suis Carl le policier";
 			Position pos = new Position(x,y);
-			PNJ pnj = new PNJ (pos,role,Script);
+			String nom = "Ticket pour le Louvre";
+			String detail = "Le ticket appartient à ton frère, tu devrais y faire un tour" 
+					+ " pour voir si il n'est pas la bas";
+			Objet o = new Objet(nom,detail);
+			PNJ pnj = new PNJ (pos,role,Script,o);
 			return pnj;
 
 		}
@@ -162,7 +167,10 @@ public class PNJ extends Personnage{
 			
 			String Script = "Bonjour je suis Brandon, Maitre nagueur à la croix-rouge";
 			Position pos = new Position(x,y);
-			PNJ pnj = new PNJ (pos,role,Script);
+			String nom = "Serviette de Maman";
+			String detail = "Ta Maman a perdu sa serviette, elle est donc passé par ici";
+			Objet o = new Objet(nom,detail);
+			PNJ pnj = new PNJ (pos,role,Script,o);
 			return pnj;
 
 		}
@@ -174,7 +182,10 @@ public class PNJ extends Personnage{
 			
 			String Script = "Bonjour je suis Corine bibliothecaire depuis plus de 40 ans";
 			Position pos = new Position(x,y);
-			PNJ pnj = new PNJ (pos,role,Script);
+			String nom = "Répertoire d'accueil";
+			String detail = "Ta soeur est passé par là ... Cherche la dans la ville";
+			Objet o = new Objet(nom,detail);
+			PNJ pnj = new PNJ (pos,role,Script,o);
 			return pnj;
 
 		}

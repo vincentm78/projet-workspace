@@ -10,7 +10,7 @@ public class Partie {
  private LinkedList<PNJ> famille = new LinkedList<PNJ>();
 	private LinkedList<PNJ> aide = new LinkedList<PNJ>();
  
- public Partie()
+ public Partie(String pseudo)
 	{
 		Carte C = new Carte();
 		C.creerCarte();
@@ -27,22 +27,24 @@ public class Partie {
 			pnj = pnj.donnePNJFamille(j);
 			aide.add(pnj);
 		}
+		Integer x = 4;
+		Integer y = 2;
+		Position p = new Position(x,y);
+		Joueur j = new Joueur(p, pseudo);
 		
 	}
  
  
- 
- 
-               public void traiterCmd(String cmd)
 
-              {
-                  if(listecmdPossible.contains(cmd))
+ public void traiterCmd(String cmd){
+	 if(listecmdPossible.contains(cmd))
+ 
 
 // il faut qu'on lie les commandes à des conditions dans des listes (exemple: si la pos du joueur est a
 
 //coté d'une porte -> cmdPossible ouvrirPorte)
 
-                            {
+     {
 
                                           if(cmd == "enregistrer")
 
@@ -89,7 +91,8 @@ public class Partie {
                                           }
 
 
-                            }
+  }
+ }
                 
  public void setFamille(LinkedList<PNJ> famille) {
 		this.famille = famille;
